@@ -1,0 +1,456 @@
+* {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+body {
+  background-color: rgb(184, 211, 203);
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(9, 68, 70);
+  padding: 60px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px grey;
+  z-index: 10;
+}
+
+h1:hover {
+  background-color: teal;
+  color: white;
+  transform: scaleX(1.1);
+  transition: all 1s ease;
+  box-shadow: 0px 0px 0px
+}
+
+img {
+  width: 500px;
+  height: 200px;
+}
+
+.titleAndHeader {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 50px
+}
+
+img {
+  margin: 5px 10px 5px 10px;
+  border-radius: 0 0 30px 30px;
+}
+
+.flippedImg {
+  transform: scaleX(-1);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 5px;
+}
+
+.modelChossingError {
+  color: rgb(129, 4, 4);
+}
+
+.inputAndlabel {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  height: 30px;
+}
+
+.inputAndlabel label {
+  color: white;
+  background-color: rgb(9, 68, 70);
+  padding: 8px 8px 8px 15px;
+  border-radius: 15px 1px 1px 15px;
+  min-width: 50px;
+  border: none;
+  font-size: 12px;
+  height: auto;
+}
+
+.inputAndlabel input {
+  color: black;
+  padding: 10px;
+  border-radius: 1px 15px 15px 1px;
+  min-width: 130px;
+  border: 1px solid rgb(9, 68, 70);
+  outline: none;
+}
+
+.inputAndlabel select {
+  color: black;
+  width: 152px;
+  height: auto;
+  font-size: 20px;
+  outline: none;
+  border-radius: 1px 15px 15px 1px;
+  border: 1px solid rgb(9, 68, 70);
+}
+
+.showCarsBtn,
+.addCarsBtn {
+  background-color: rgb(9, 68, 70);
+  color: white;
+  margin: 10px;
+  padding: 12px;
+  font-size: 12px;
+  border: 1px solid rgb(9, 68, 70);
+  min-width: 200px;
+}
+
+.showCarsBtn {
+  border-radius: 15px 1px 1px 15px;
+  margin-right: 15px;
+}
+
+.addCarsBtn {
+  border-radius: 1px 15px 15px 1px;
+  margin-left: 15px;
+}
+
+.showCarsBtn:hover,
+.addCarsBtn:hover {
+  color: rgb(9, 68, 70);
+  background-color: white;
+}
+
+.showCarsBtn:active,
+.addCarsBtn:active {
+  transform: translate(2px, 2px);
+}
+
+table {
+  width: 1000px;
+  margin: auto;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+th {
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+th div {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: teal;
+  margin: 5px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+td,
+th {
+  background-color: teal;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+
+td:hover {
+  background-color: rgb(11, 65, 65);
+}
+
+.updateTd {
+  display: flex;
+  justify-content: space-around;
+}
+
+.updateTd input {
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+
+input::placeholder {
+  color: rgb(71, 71, 168);
+  text-align: center;
+
+}
+
+.filterInput {
+  width: 200px;
+  margin: auto;
+  border-radius: 15px;
+  min-height: 30px;
+  outline: none;
+  padding-left: 10px;
+  border: 1px teal solid
+}
+
+.filterInput::placeholder {
+  font-style: italic;
+  color: rgb(133, 132, 132);
+  font-size: 10px;
+}
+
+.sortingContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sortingContainer button {
+  margin: 10px
+}
+
+.sortByPriceButton,
+.sortByColorButton,
+.sortByYearButton {
+  background-color: rgb(1, 78, 78);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 15px 1px 1px 15px;
+
+}
+
+.sortByColorButton {
+  border-radius: 1px 1px 1px 1px;
+}
+
+.sortByYearButton {
+  border-radius: 1px 15px 15px 1px;
+}
+
+.sortByPriceButton:hover,
+.sortByColorButton:hover,
+.sortByYearButton:hover {
+  background-color: white;
+  color: rgb(1, 78, 78);
+}
+
+.sortByPriceButton:active,
+.sortByColorButton:active,
+.sortByYearButton:active {
+  transform: translate(2px, 2px);
+}
+
+td button {
+  background-color: rgb(38, 51, 105);
+  color: white;
+  border: 1px solid rgb(4, 25, 26);
+  margin: 5px;
+}
+
+.delBtn {
+  background-color: rgb(97, 29, 29);
+  color: white;
+  border: 1px solid rgb(34, 2, 2);
+  width: auto;
+}
+
+td input {
+  max-width: 300px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 3px;
+}
+
+.errorMsg {
+  min-height: 20px;
+  color: rgb(134, 43, 43);
+}
+
+.newPriceInput {
+  width: 100px;
+}
+
+
+.updateModal,
+.deleteModal,
+.addModal {
+  width: 300px;
+  height: 120px;
+  color: white;
+  background-color: rgb(184, 211, 203);
+  border-radius: 5px;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: rgb(0, 56, 56) 1px solid;
+}
+
+.deleteModal {
+  height: 140px;
+}
+
+.modelDialog {
+  color: white;
+  background-color: rgb(1, 56, 56);
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.dialogActions {
+  display: flex;
+  justify-content: center;
+}
+
+.dialogActions button {
+  background-color: rgb(1, 56, 56);
+  min-width: 5vw;
+  margin: 15px;
+  padding: 10px;
+  color: white;
+  border: none;
+}
+
+.cancelDialog {
+  border-radius: 15px 1px 1px 15px;
+}
+
+.yesDialog {
+  border-radius: 1px 15px 15px 1px;
+}
+
+.scrollUpWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.scrollUp {
+  background-color: rgb(0, 80, 80);
+  color: white;
+  padding: 10px;
+  border-radius: 20px 20px 3px 3px;
+  margin: 10px;
+  border: none;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 1500px) {
+
+  .showCarsBtn,
+  .addCarsBtn {
+    min-width: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: rgb(9, 68, 70);
+    padding: 20px;
+
+  }
+
+  img {
+    width: 250px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .newPriceInput {
+    width: 50px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+
+  td {
+    font-size: 10px;
+
+  }
+
+  table {
+    width: 700px;
+  }
+
+}
+
+
+@media screen and (max-width: 950px) {
+  .information {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  table {
+    width: 600px;
+  }
+
+  td button {
+    width: 50%;
+  }
+
+  td {
+    font-size: 8px;
+  }
+
+  h1 {
+    text-align: center;
+    color: rgb(9, 68, 70);
+    padding: 0px;
+    margin: 20px;
+  }
+
+  img {
+    width: 125px;
+    height: 50px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .information {
+    width: 80vw;
+  }
+
+  table {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .information {
+    width: 100vw;
+  }
+}
